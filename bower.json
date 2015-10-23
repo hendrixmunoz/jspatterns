@@ -1,0 +1,26 @@
+{
+  "name": "(jspatterns)",
+  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "main": "server.js",
+  "authors": [
+    "lopezjr2334@student.laccd.edu"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "javascript",
+    "design",
+    "patterns"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "requirejs": "~2.1.20"
+  }
+}
