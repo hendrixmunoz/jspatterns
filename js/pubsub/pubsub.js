@@ -13,10 +13,20 @@ define(function() {
         }
         ,
         subscribe: function(topic, callback) {
+         
+            var index; 
+            
+            //adding subscribers
             if(!subscribers[topic]) {
                 subscribers[topic] = []; 
             }
-            subscribers[topic].push(callback)
+            index = subscribers[topic].push(callback) - 1; 
+            
+            return {
+                dispose: function() {
+                    subscribers[topic].splice(index, 1); 
+                }
+            }
         }
     }; 
 })
